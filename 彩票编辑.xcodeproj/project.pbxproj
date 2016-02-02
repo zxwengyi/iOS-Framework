@@ -12,7 +12,8 @@
 		18D93B361C5FB5EE00467FD1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D93B351C5FB5EE00467FD1 /* ViewController.m */; };
 		18D93B391C5FB5EE00467FD1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18D93B371C5FB5EE00467FD1 /* Main.storyboard */; };
 		18D93B3B1C5FB5EE00467FD1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18D93B3A1C5FB5EE00467FD1 /* Assets.xcassets */; };
-		18D93B3E1C5FB5EE00467FD1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18D93B3C1C5FB5EE00467FD1 /* LaunchScreen.storyboard */; };
+		18D93B5C1C5FC28C00467FD1 /* CpTabbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D93B5B1C5FC28C00467FD1 /* CpTabbar.m */; };
+		18D93B5F1C5FC38D00467FD1 /* CpTabbarviewcontroller.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D93B5E1C5FC38D00467FD1 /* CpTabbarviewcontroller.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,8 +25,11 @@
 		18D93B351C5FB5EE00467FD1 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		18D93B381C5FB5EE00467FD1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		18D93B3A1C5FB5EE00467FD1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		18D93B3D1C5FB5EE00467FD1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		18D93B3F1C5FB5EE00467FD1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18D93B5A1C5FC28C00467FD1 /* CpTabbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CpTabbar.h; sourceTree = "<group>"; };
+		18D93B5B1C5FC28C00467FD1 /* CpTabbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CpTabbar.m; sourceTree = "<group>"; };
+		18D93B5D1C5FC38D00467FD1 /* CpTabbarviewcontroller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CpTabbarviewcontroller.h; sourceTree = "<group>"; };
+		18D93B5E1C5FC38D00467FD1 /* CpTabbarviewcontroller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CpTabbarviewcontroller.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +62,13 @@
 		18D93B2D1C5FB5EE00467FD1 /* 彩票编辑 */ = {
 			isa = PBXGroup;
 			children = (
+				18D93B451C5FC10900467FD1 /* Classes */,
 				18D93B311C5FB5EE00467FD1 /* AppDelegate.h */,
 				18D93B321C5FB5EE00467FD1 /* AppDelegate.m */,
 				18D93B341C5FB5EE00467FD1 /* ViewController.h */,
 				18D93B351C5FB5EE00467FD1 /* ViewController.m */,
 				18D93B371C5FB5EE00467FD1 /* Main.storyboard */,
 				18D93B3A1C5FB5EE00467FD1 /* Assets.xcassets */,
-				18D93B3C1C5FB5EE00467FD1 /* LaunchScreen.storyboard */,
 				18D93B3F1C5FB5EE00467FD1 /* Info.plist */,
 				18D93B2E1C5FB5EE00467FD1 /* Supporting Files */,
 			);
@@ -77,6 +81,178 @@
 				18D93B2F1C5FB5EE00467FD1 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		18D93B451C5FC10900467FD1 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				18D93B461C5FC10900467FD1 /* Main */,
+				18D93B4A1C5FC10900467FD1 /* Award（2） */,
+				18D93B4E1C5FC10900467FD1 /* Award（开奖结果） */,
+				18D93B521C5FC10900467FD1 /* Buy（购买） */,
+				18D93B561C5FC10900467FD1 /* Hall（购彩大厅） */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		18D93B461C5FC10900467FD1 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				18D93B471C5FC10900467FD1 /* Controller */,
+				18D93B481C5FC10900467FD1 /* Modle */,
+				18D93B491C5FC10900467FD1 /* View */,
+			);
+			name = Main;
+			path = "Award（1）";
+			sourceTree = "<group>";
+		};
+		18D93B471C5FC10900467FD1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				18D93B5D1C5FC38D00467FD1 /* CpTabbarviewcontroller.h */,
+				18D93B5E1C5FC38D00467FD1 /* CpTabbarviewcontroller.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		18D93B481C5FC10900467FD1 /* Modle */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Modle;
+			sourceTree = "<group>";
+		};
+		18D93B491C5FC10900467FD1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				18D93B5A1C5FC28C00467FD1 /* CpTabbar.h */,
+				18D93B5B1C5FC28C00467FD1 /* CpTabbar.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		18D93B4A1C5FC10900467FD1 /* Award（2） */ = {
+			isa = PBXGroup;
+			children = (
+				18D93B4B1C5FC10900467FD1 /* Controller */,
+				18D93B4C1C5FC10900467FD1 /* Modle */,
+				18D93B4D1C5FC10900467FD1 /* View */,
+			);
+			path = "Award（2）";
+			sourceTree = "<group>";
+		};
+		18D93B4B1C5FC10900467FD1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		18D93B4C1C5FC10900467FD1 /* Modle */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Modle;
+			sourceTree = "<group>";
+		};
+		18D93B4D1C5FC10900467FD1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		18D93B4E1C5FC10900467FD1 /* Award（开奖结果） */ = {
+			isa = PBXGroup;
+			children = (
+				18D93B4F1C5FC10900467FD1 /* Controller */,
+				18D93B501C5FC10900467FD1 /* Modle */,
+				18D93B511C5FC10900467FD1 /* View */,
+			);
+			path = "Award（开奖结果）";
+			sourceTree = "<group>";
+		};
+		18D93B4F1C5FC10900467FD1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		18D93B501C5FC10900467FD1 /* Modle */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Modle;
+			sourceTree = "<group>";
+		};
+		18D93B511C5FC10900467FD1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		18D93B521C5FC10900467FD1 /* Buy（购买） */ = {
+			isa = PBXGroup;
+			children = (
+				18D93B531C5FC10900467FD1 /* Controller */,
+				18D93B541C5FC10900467FD1 /* Modle */,
+				18D93B551C5FC10900467FD1 /* View */,
+			);
+			path = "Buy（购买）";
+			sourceTree = "<group>";
+		};
+		18D93B531C5FC10900467FD1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		18D93B541C5FC10900467FD1 /* Modle */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Modle;
+			sourceTree = "<group>";
+		};
+		18D93B551C5FC10900467FD1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		18D93B561C5FC10900467FD1 /* Hall（购彩大厅） */ = {
+			isa = PBXGroup;
+			children = (
+				18D93B571C5FC10900467FD1 /* Controller */,
+				18D93B581C5FC10900467FD1 /* Modle */,
+				18D93B591C5FC10900467FD1 /* View */,
+			);
+			path = "Hall（购彩大厅）";
+			sourceTree = "<group>";
+		};
+		18D93B571C5FC10900467FD1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		18D93B581C5FC10900467FD1 /* Modle */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Modle;
+			sourceTree = "<group>";
+		};
+		18D93B591C5FC10900467FD1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,7 +312,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18D93B3E1C5FB5EE00467FD1 /* LaunchScreen.storyboard in Resources */,
 				18D93B3B1C5FB5EE00467FD1 /* Assets.xcassets in Resources */,
 				18D93B391C5FB5EE00467FD1 /* Main.storyboard in Resources */,
 			);
@@ -149,9 +324,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18D93B5C1C5FC28C00467FD1 /* CpTabbar.m in Sources */,
 				18D93B361C5FB5EE00467FD1 /* ViewController.m in Sources */,
 				18D93B331C5FB5EE00467FD1 /* AppDelegate.m in Sources */,
 				18D93B301C5FB5EE00467FD1 /* main.m in Sources */,
+				18D93B5F1C5FC38D00467FD1 /* CpTabbarviewcontroller.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -164,14 +341,6 @@
 				18D93B381C5FB5EE00467FD1 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		18D93B3C1C5FB5EE00467FD1 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				18D93B3D1C5FB5EE00467FD1 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
