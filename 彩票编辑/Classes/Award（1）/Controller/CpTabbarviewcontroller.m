@@ -30,6 +30,14 @@
 //        self.selectedIndex = selectedIndex;
 //    };
     tabBar.delegate = self;
+//    添加底部按钮
+    NSString *imageName = nil;
+    NSString *selimageName = nil;
+    for (int i=0; i<self.childViewControllers.count; i++) {
+        imageName =[NSString stringWithFormat:@"TabBar%d",i+1];
+        selimageName =[NSString stringWithFormat:@"TabBar%dSel",i+1];
+        [tabBar addTabBarButtonWithName:imageName selName:selimageName];
+    }
 }
 //实现代理方法
 -(void)tabBar:(CpTabbar *)tabBar didseletedIndex:(int)index{

@@ -23,39 +23,23 @@
 */
 -(instancetype)initWithFrame:(CGRect)frame{
     self = [super initWithFrame:frame];
-    if (self) {
-//        添加按钮
-        [self addButtons];
-    }
-    
     return self;
 
 }
-//创建button  
--(void)addButtons{
-    NSString *imageName = nil;
-     NSString *selimageName = nil;
-    for (int i = 0; i<5; i++) {
-        CpTabBarButton *btn = [CpTabBarButton buttonWithType:UIButtonTypeCustom];
-         btn.tag = i;
+//提供一个方法给外界添加按钮
+-(void)addTabBarButtonWithName:(NSString *)Name selName:(NSString *)selName{
+//        创建按钮
+ CpTabBarButton *btn = [CpTabBarButton buttonWithType:UIButtonTypeCustom];
 //        设置按钮的图片
-        imageName =[NSString stringWithFormat:@"TabBar%d",i+1];
-         selimageName =[NSString stringWithFormat:@"TabBar%dSel",i+1];
-       UIImage *image = [UIImage imageNamed:imageName];
-         UIImage *selimage = [UIImage imageNamed:selimageName];
-        [btn setBackgroundImage:image forState:UIControlStateNormal];
-        [btn setBackgroundImage:selimage forState:UIControlStateSelected];
-        [self addSubview:btn];
+    UIImage *image = [UIImage imageNamed:Name];
+    UIImage *selimage = [UIImage imageNamed:selName];
+    [btn setBackgroundImage:image forState:UIControlStateNormal];
+    [btn setBackgroundImage:selimage forState:UIControlStateSelected];
+    [self addSubview:btn];
 //        监听按钮的点击
-        [btn addTarget:self action:@selector(Clickbtn:) forControlEvents:UIControlEventTouchDown];
-//        默认情况选择第一个
-        if (i==0) {
-            [self Clickbtn:btn];
-        }
-    }
+    [btn addTarget:self action:@selector(Clickbtn:) forControlEvents:UIControlEventTouchDown];
+    //        默认情况选择第一个
 }
-
-
 //点击button是调用
 -(void)Clickbtn:(UIButton *)button
 {
@@ -75,7 +59,6 @@
     [super layoutSubviews];
 //    CGFloat btnW =self.bounds.size.width/(self.subviews.count-1);
        CGFloat btnW =self.bounds.size.width/self.subviews.count;
-
     CGFloat btnH = self.bounds.size.height;
     CGFloat btnY = 0;
     CGFloat btnx =0;
@@ -83,6 +66,10 @@
         UIButton *btn = self.subviews[i];
         btnx = i*btnW;
         btn.frame =CGRectMake(btnx, btnY, btnW, btnH);
+        btn.tag = i;
+        if (i==0) {
+            [self Clickbtn:btn];
+        }
     }
 }
 

@@ -19,4 +19,6 @@
 //相当于有个小弟
 //@property(nonatomic ,copy) CpTabbarBlock block;
 @property(nonatomic ,weak)id<CpTabbarDelegate> delegate;
+
+-(void) addTabBarButtonWithName:(NSString *) Name selName:(NSString *)selName;
 @end
