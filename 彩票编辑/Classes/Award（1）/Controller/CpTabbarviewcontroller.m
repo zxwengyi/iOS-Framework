@@ -26,6 +26,9 @@
     CpTabbar* tabBar = [[CpTabbar alloc] init];
     tabBar.frame =self.tabBar.frame;
     [self.view addSubview:tabBar];
+    tabBar.block = ^(int selectedIndex){
+        self.selectedIndex = selectedIndex;
+    };
 }
 
 - (void)didReceiveMemoryWarning {
