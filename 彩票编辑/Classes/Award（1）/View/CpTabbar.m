@@ -37,7 +37,7 @@
      NSString *selimageName = nil;
     for (int i = 0; i<5; i++) {
         CpTabBarButton *btn = [CpTabBarButton buttonWithType:UIButtonTypeCustom];
-        btn.tag = i;
+         btn.tag = i;
 //        设置按钮的图片
         imageName =[NSString stringWithFormat:@"TabBar%d",i+1];
          selimageName =[NSString stringWithFormat:@"TabBar%dSel",i+1];
@@ -63,8 +63,11 @@
     button.selected = YES;
     _selButton = button;
 //   切换控制器
-    if (_block) {
-        _block(button.tag);
+//    if (_block) {
+//        _block(button.tag);
+//    }
+    if ([_delegate respondsToSelector:@selector(tabBar:didseletedIndex:)]) {
+        [_delegate tabBar:self didseletedIndex:(int)button.tag];
     }
 }
 //设置button的大小

@@ -8,7 +8,7 @@
 
 #import "CpTabbarviewcontroller.h"
 #import "CpTabbar.h"
-@interface CpTabbarviewcontroller ()
+@interface CpTabbarviewcontroller ()<CpTabbarDelegate>
 
 @end
 
@@ -26,9 +26,15 @@
     CpTabbar* tabBar = [[CpTabbar alloc] init];
     tabBar.frame =self.tabBar.frame;
     [self.view addSubview:tabBar];
-    tabBar.block = ^(int selectedIndex){
-        self.selectedIndex = selectedIndex;
-    };
+//    tabBar.block = ^(int selectedIndex){
+//        self.selectedIndex = selectedIndex;
+//    };
+    tabBar.delegate = self;
+}
+//实现代理方法
+-(void)tabBar:(CpTabbar *)tabBar didseletedIndex:(int)index{
+
+    self.selectedIndex = index;
 }
 
 - (void)didReceiveMemoryWarning {
