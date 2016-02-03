@@ -16,6 +16,17 @@
 @implementation CpNavigationController
 //第一次调用这个类或者之类时调用，并且只调用一次
 +(void)initialize{
+    if (self ==[CpNavigationController class]) {//保证只调用一次
+//        设置全局导航条的外观
+        [self setupNav];
+//        设置全局barButton的外观
+        [self setupBarButton];
+    }
+
+
+}
+#warning 设置全局导航条的外观
++(void)setupNav{
     UINavigationBar *bar = [UINavigationBar appearance];
     UIImage * navImage= nil;
     //        配置导航条上的图片
@@ -24,16 +35,26 @@
     }else
         navImage =[UIImage imageNamed:@"NavBar"];
     [bar setBackgroundImage:navImage forBarMetrics:UIBarMetricsDefault];
-//    设置导航栏上的文字颜色为白色
+    //    设置导航栏上的文字颜色为白色
     NSDictionary *dict = @{
                            NSForegroundColorAttributeName :[UIColor whiteColor]
-                           
-                           
                            };
     [bar setTitleTextAttributes:dict];
+//    设置导航栏上的主题颜色
+    [bar setTintColor:[UIColor whiteColor]];
 
 }
-
+#warning 设置全局barButton的外观
++(void)setupBarButton{
+    //    设置bubtton的背景图片
+    UIBarButtonItem *buttonitem = [UIBarButtonItem appearance];
+    [buttonitem setBackgroundImage:[UIImage imageNamed:@"NavButton"] forState:UIControlStateNormal barMetrics:UIBarMetricsDefault];
+    [buttonitem setBackgroundImage:[UIImage imageNamed:@"NavButtonPressed"] forState:UIControlStateHighlighted barMetrics:UIBarMetricsDefault];
+    //    设置返回按钮的背景图片
+    [buttonitem setBackButtonBackgroundImage:[UIImage imageNamed:@"NavBackButton"] forState:UIControlStateNormal barMetrics:UIBarMetricsDefault];
+    [buttonitem setBackButtonBackgroundImage:[UIImage imageNamed:@"NavBackButtonPressed"] forState:UIControlStateHighlighted barMetrics:UIBarMetricsDefault];
+    
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.

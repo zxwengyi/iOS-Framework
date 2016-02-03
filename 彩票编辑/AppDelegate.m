@@ -17,7 +17,13 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+
+//设置状态栏上的时间显示为白色
+    application.statusBarStyle = UIStatusBarStyleLightContent;
+    
     return YES;
+    
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {

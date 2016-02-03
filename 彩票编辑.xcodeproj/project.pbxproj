@@ -18,6 +18,9 @@
 		18D93B5C1C5FC28C00467FD1 /* CpTabbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D93B5B1C5FC28C00467FD1 /* CpTabbar.m */; };
 		18D93B5F1C5FC38D00467FD1 /* CpTabbarviewcontroller.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D93B5E1C5FC38D00467FD1 /* CpTabbarviewcontroller.m */; };
 		18D9917C1C60B86F00CA5EDC /* CpTabBarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D9917B1C60B86F00CA5EDC /* CpTabBarButton.m */; };
+		18F3DE0B1C61EAA1007916E4 /* CpLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F3DE0A1C61EAA1007916E4 /* CpLoginViewController.m */; };
+		18F3DE161C61F075007916E4 /* UIImage+Tool.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F3DE151C61F075007916E4 /* UIImage+Tool.m */; };
+		18F3DE1D1C620CB4007916E4 /* CpSettingTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F3DE1C1C620CB4007916E4 /* CpSettingTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +45,12 @@
 		18D93B5E1C5FC38D00467FD1 /* CpTabbarviewcontroller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CpTabbarviewcontroller.m; sourceTree = "<group>"; };
 		18D9917A1C60B86F00CA5EDC /* CpTabBarButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CpTabBarButton.h; sourceTree = "<group>"; };
 		18D9917B1C60B86F00CA5EDC /* CpTabBarButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CpTabBarButton.m; sourceTree = "<group>"; };
+		18F3DE091C61EAA1007916E4 /* CpLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CpLoginViewController.h; sourceTree = "<group>"; };
+		18F3DE0A1C61EAA1007916E4 /* CpLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CpLoginViewController.m; sourceTree = "<group>"; };
+		18F3DE141C61F075007916E4 /* UIImage+Tool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Tool.h"; sourceTree = "<group>"; };
+		18F3DE151C61F075007916E4 /* UIImage+Tool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Tool.m"; sourceTree = "<group>"; };
+		18F3DE1B1C620CB4007916E4 /* CpSettingTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CpSettingTableViewController.h; sourceTree = "<group>"; };
+		18F3DE1C1C620CB4007916E4 /* CpSettingTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CpSettingTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,8 +107,10 @@
 		18D93B451C5FC10900467FD1 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				18F3DE171C620C10007916E4 /* Setting（设置） */,
+				18F3DE0C1C61EF29007916E4 /* Other */,
 				18D93B461C5FC10900467FD1 /* Main */,
-				18D93B4A1C5FC10900467FD1 /* Award（2） */,
+				18D93B4A1C5FC10900467FD1 /* Mine(我的彩票) */,
 				18D93B4E1C5FC10900467FD1 /* Award（开奖结果） */,
 				18D93B521C5FC10900467FD1 /* Buy（购买） */,
 				18D93B561C5FC10900467FD1 /* Hall（购彩大厅） */,
@@ -147,19 +158,22 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		18D93B4A1C5FC10900467FD1 /* Award（2） */ = {
+		18D93B4A1C5FC10900467FD1 /* Mine(我的彩票) */ = {
 			isa = PBXGroup;
 			children = (
 				18D93B4B1C5FC10900467FD1 /* Controller */,
 				18D93B4C1C5FC10900467FD1 /* Modle */,
 				18D93B4D1C5FC10900467FD1 /* View */,
 			);
+			name = "Mine(我的彩票)";
 			path = "Award（2）";
 			sourceTree = "<group>";
 		};
 		18D93B4B1C5FC10900467FD1 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				18F3DE091C61EAA1007916E4 /* CpLoginViewController.h */,
+				18F3DE0A1C61EAA1007916E4 /* CpLoginViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -275,6 +289,81 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		18F3DE0C1C61EF29007916E4 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				18F3DE101C61EF52007916E4 /* Catgroy */,
+				18F3DE0D1C61EF29007916E4 /* Controller */,
+				18F3DE0E1C61EF29007916E4 /* Modle */,
+				18F3DE0F1C61EF29007916E4 /* View */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		18F3DE0D1C61EF29007916E4 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		18F3DE0E1C61EF29007916E4 /* Modle */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Modle;
+			sourceTree = "<group>";
+		};
+		18F3DE0F1C61EF29007916E4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		18F3DE101C61EF52007916E4 /* Catgroy */ = {
+			isa = PBXGroup;
+			children = (
+				18F3DE141C61F075007916E4 /* UIImage+Tool.h */,
+				18F3DE151C61F075007916E4 /* UIImage+Tool.m */,
+			);
+			name = Catgroy;
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		18F3DE171C620C10007916E4 /* Setting（设置） */ = {
+			isa = PBXGroup;
+			children = (
+				18F3DE181C620C10007916E4 /* Controller */,
+				18F3DE191C620C10007916E4 /* Modle */,
+				18F3DE1A1C620C10007916E4 /* View */,
+			);
+			path = "Setting（设置）";
+			sourceTree = "<group>";
+		};
+		18F3DE181C620C10007916E4 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				18F3DE1B1C620CB4007916E4 /* CpSettingTableViewController.h */,
+				18F3DE1C1C620CB4007916E4 /* CpSettingTableViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		18F3DE191C620C10007916E4 /* Modle */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Modle;
+			sourceTree = "<group>";
+		};
+		18F3DE1A1C620C10007916E4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -349,10 +438,13 @@
 				18AFBEAE1C619B60006CA53B /* CpNavigationController.m in Sources */,
 				18AFBEB11C61BADF006CA53B /* CpTitleButton.m in Sources */,
 				18D93B5C1C5FC28C00467FD1 /* CpTabbar.m in Sources */,
+				18F3DE1D1C620CB4007916E4 /* CpSettingTableViewController.m in Sources */,
 				18D93B361C5FB5EE00467FD1 /* ViewController.m in Sources */,
 				18D93B331C5FB5EE00467FD1 /* AppDelegate.m in Sources */,
 				18D93B301C5FB5EE00467FD1 /* main.m in Sources */,
 				18D93B5F1C5FC38D00467FD1 /* CpTabbarviewcontroller.m in Sources */,
+				18F3DE161C61F075007916E4 /* UIImage+Tool.m in Sources */,
+				18F3DE0B1C61EAA1007916E4 /* CpLoginViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
