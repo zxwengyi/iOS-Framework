@@ -10,8 +10,13 @@
 #import "CpSettingItem.h"
 #import "CpSettingGroup.h"
 
+#import "CpSettingCell.h"
+#import "CpSettingSwicthItem.h"
+#import "CpSettingArrowItem.h"
+
 @interface CpSettingTableViewController ()
 @property(nonatomic,strong) NSMutableArray *dateList;
+
 @end
 
 @implementation CpSettingTableViewController
@@ -20,15 +25,15 @@
     if (_dateList==nil) {
         _dateList = [NSMutableArray array];
 //        第0组
-        CpSettingItem *pushNotice = [CpSettingItem itemWithIcon:@"MorePush" title:@"推送和提醒"];
-        CpSettingItem *yaoyiyao = [CpSettingItem itemWithIcon:@"handShake" title:@"摇一摇机选"];
+        CpSettingItem *pushNotice = [CpSettingArrowItem itemWithIcon:@"MorePush" title:@"推送和提醒"];
+        CpSettingItem *yaoyiyao = [CpSettingSwicthItem itemWithIcon:@"handShake" title:@"摇一摇机选"];
         CpSettingGroup *group0 = [[CpSettingGroup alloc] init];
         group0.items = @[pushNotice ,yaoyiyao];
         group0.header = @"dajhfffh";
         group0.footer =@"1222342";
 //        第一组
-        CpSettingItem *newVersion = [CpSettingItem itemWithIcon:@"MoreUpdate" title:@"检查新版本"];
-        CpSettingItem *help = [CpSettingItem itemWithIcon:@"MoreHelp" title:@"帮助"];
+        CpSettingItem *newVersion = [CpSettingArrowItem itemWithIcon:@"MoreUpdate" title:@"检查新版本"];
+        CpSettingItem *help = [CpSettingArrowItem itemWithIcon:@"MoreHelp" title:@"帮助"];
         CpSettingGroup *group1 = [[CpSettingGroup alloc] init];
         group1.items = @[pushNotice ,yaoyiyao];
         group1.header = @"是这样";
@@ -57,16 +62,14 @@
 }
 //返回怎样的cell
 -(UITableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-static NSString *ID = @"cell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:ID];
-    if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:ID];
-    }
+//    创建cell
+    CpSettingCell *cell = [CpSettingCell cellWithTableView:tableView];
+//    取出模型
     CpSettingGroup *group = self.dateList[indexPath.section];
     CpSettingItem *item = group.items[indexPath.row];
-    cell.imageView.image = [UIImage imageNamed:item.icon];
-    cell.textLabel.text = item.title;
-    return cell;
+//    传递模型
+    cell.item = item;
+        return cell;
 
 }
 //头部标题

@@ -19,6 +19,9 @@
 		18D93B3B1C5FB5EE00467FD1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18D93B3A1C5FB5EE00467FD1 /* Assets.xcassets */; };
 		18D93B5C1C5FC28C00467FD1 /* CpTabbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D93B5B1C5FC28C00467FD1 /* CpTabbar.m */; };
 		18D93B5F1C5FC38D00467FD1 /* CpTabbarviewcontroller.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D93B5E1C5FC38D00467FD1 /* CpTabbarviewcontroller.m */; };
+		18D95EEA1C62583A006D008D /* CpSettingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D95EE91C62583A006D008D /* CpSettingCell.m */; };
+		18D95EED1C625D3A006D008D /* CpSettingArrowItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D95EEC1C625D3A006D008D /* CpSettingArrowItem.m */; };
+		18D95EF01C625D5C006D008D /* CpSettingSwicthItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D95EEF1C625D5C006D008D /* CpSettingSwicthItem.m */; };
 		18D9917C1C60B86F00CA5EDC /* CpTabBarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D9917B1C60B86F00CA5EDC /* CpTabBarButton.m */; };
 		18F3DE0B1C61EAA1007916E4 /* CpLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F3DE0A1C61EAA1007916E4 /* CpLoginViewController.m */; };
 		18F3DE161C61F075007916E4 /* UIImage+Tool.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F3DE151C61F075007916E4 /* UIImage+Tool.m */; };
@@ -49,6 +52,12 @@
 		18D93B5B1C5FC28C00467FD1 /* CpTabbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CpTabbar.m; sourceTree = "<group>"; };
 		18D93B5D1C5FC38D00467FD1 /* CpTabbarviewcontroller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CpTabbarviewcontroller.h; sourceTree = "<group>"; };
 		18D93B5E1C5FC38D00467FD1 /* CpTabbarviewcontroller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CpTabbarviewcontroller.m; sourceTree = "<group>"; };
+		18D95EE81C62583A006D008D /* CpSettingCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CpSettingCell.h; sourceTree = "<group>"; };
+		18D95EE91C62583A006D008D /* CpSettingCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CpSettingCell.m; sourceTree = "<group>"; };
+		18D95EEB1C625D3A006D008D /* CpSettingArrowItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CpSettingArrowItem.h; sourceTree = "<group>"; };
+		18D95EEC1C625D3A006D008D /* CpSettingArrowItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CpSettingArrowItem.m; sourceTree = "<group>"; };
+		18D95EEE1C625D5C006D008D /* CpSettingSwicthItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CpSettingSwicthItem.h; sourceTree = "<group>"; };
+		18D95EEF1C625D5C006D008D /* CpSettingSwicthItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CpSettingSwicthItem.m; sourceTree = "<group>"; };
 		18D9917A1C60B86F00CA5EDC /* CpTabBarButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CpTabBarButton.h; sourceTree = "<group>"; };
 		18D9917B1C60B86F00CA5EDC /* CpTabBarButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CpTabBarButton.m; sourceTree = "<group>"; };
 		18F3DE091C61EAA1007916E4 /* CpLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CpLoginViewController.h; sourceTree = "<group>"; };
@@ -363,6 +372,10 @@
 				183C6F1D1C622ACB00FD2E1F /* CpSettingItem.m */,
 				183C6F1F1C62368600FD2E1F /* CpSettingGroup.h */,
 				183C6F201C62368600FD2E1F /* CpSettingGroup.m */,
+				18D95EEB1C625D3A006D008D /* CpSettingArrowItem.h */,
+				18D95EEC1C625D3A006D008D /* CpSettingArrowItem.m */,
+				18D95EEE1C625D5C006D008D /* CpSettingSwicthItem.h */,
+				18D95EEF1C625D5C006D008D /* CpSettingSwicthItem.m */,
 			);
 			path = Modle;
 			sourceTree = "<group>";
@@ -370,6 +383,8 @@
 		18F3DE1A1C620C10007916E4 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				18D95EE81C62583A006D008D /* CpSettingCell.h */,
+				18D95EE91C62583A006D008D /* CpSettingCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -446,12 +461,15 @@
 				183C6F1E1C622ACB00FD2E1F /* CpSettingItem.m in Sources */,
 				18AFBEAB1C6190B5006CA53B /* CpHallViewController.m in Sources */,
 				18D9917C1C60B86F00CA5EDC /* CpTabBarButton.m in Sources */,
+				18D95EEA1C62583A006D008D /* CpSettingCell.m in Sources */,
 				18AFBEAE1C619B60006CA53B /* CpNavigationController.m in Sources */,
 				18AFBEB11C61BADF006CA53B /* CpTitleButton.m in Sources */,
 				18D93B5C1C5FC28C00467FD1 /* CpTabbar.m in Sources */,
 				18F3DE1D1C620CB4007916E4 /* CpSettingTableViewController.m in Sources */,
 				18D93B361C5FB5EE00467FD1 /* ViewController.m in Sources */,
 				18D93B331C5FB5EE00467FD1 /* AppDelegate.m in Sources */,
+				18D95EF01C625D5C006D008D /* CpSettingSwicthItem.m in Sources */,
+				18D95EED1C625D3A006D008D /* CpSettingArrowItem.m in Sources */,
 				183C6F211C62368600FD2E1F /* CpSettingGroup.m in Sources */,
 				18D93B301C5FB5EE00467FD1 /* main.m in Sources */,
 				18D93B5F1C5FC38D00467FD1 /* CpTabbarviewcontroller.m in Sources */,
