@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		183C6F1E1C622ACB00FD2E1F /* CpSettingItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 183C6F1D1C622ACB00FD2E1F /* CpSettingItem.m */; };
+		183C6F211C62368600FD2E1F /* CpSettingGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 183C6F201C62368600FD2E1F /* CpSettingGroup.m */; };
 		18AFBEAB1C6190B5006CA53B /* CpHallViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18AFBEAA1C6190B5006CA53B /* CpHallViewController.m */; };
 		18AFBEAE1C619B60006CA53B /* CpNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18AFBEAD1C619B60006CA53B /* CpNavigationController.m */; };
 		18AFBEB11C61BADF006CA53B /* CpTitleButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 18AFBEB01C61BADF006CA53B /* CpTitleButton.m */; };
@@ -24,6 +26,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		183C6F1C1C622ACB00FD2E1F /* CpSettingItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CpSettingItem.h; sourceTree = "<group>"; };
+		183C6F1D1C622ACB00FD2E1F /* CpSettingItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CpSettingItem.m; sourceTree = "<group>"; };
+		183C6F1F1C62368600FD2E1F /* CpSettingGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CpSettingGroup.h; sourceTree = "<group>"; };
+		183C6F201C62368600FD2E1F /* CpSettingGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CpSettingGroup.m; sourceTree = "<group>"; };
 		18AFBEA91C6190B5006CA53B /* CpHallViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CpHallViewController.h; sourceTree = "<group>"; };
 		18AFBEAA1C6190B5006CA53B /* CpHallViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CpHallViewController.m; sourceTree = "<group>"; };
 		18AFBEAC1C619B60006CA53B /* CpNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CpNavigationController.h; sourceTree = "<group>"; };
@@ -353,6 +359,10 @@
 		18F3DE191C620C10007916E4 /* Modle */ = {
 			isa = PBXGroup;
 			children = (
+				183C6F1C1C622ACB00FD2E1F /* CpSettingItem.h */,
+				183C6F1D1C622ACB00FD2E1F /* CpSettingItem.m */,
+				183C6F1F1C62368600FD2E1F /* CpSettingGroup.h */,
+				183C6F201C62368600FD2E1F /* CpSettingGroup.m */,
 			);
 			path = Modle;
 			sourceTree = "<group>";
@@ -433,6 +443,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				183C6F1E1C622ACB00FD2E1F /* CpSettingItem.m in Sources */,
 				18AFBEAB1C6190B5006CA53B /* CpHallViewController.m in Sources */,
 				18D9917C1C60B86F00CA5EDC /* CpTabBarButton.m in Sources */,
 				18AFBEAE1C619B60006CA53B /* CpNavigationController.m in Sources */,
@@ -441,6 +452,7 @@
 				18F3DE1D1C620CB4007916E4 /* CpSettingTableViewController.m in Sources */,
 				18D93B361C5FB5EE00467FD1 /* ViewController.m in Sources */,
 				18D93B331C5FB5EE00467FD1 /* AppDelegate.m in Sources */,
+				183C6F211C62368600FD2E1F /* CpSettingGroup.m in Sources */,
 				18D93B301C5FB5EE00467FD1 /* main.m in Sources */,
 				18D93B5F1C5FC38D00467FD1 /* CpTabbarviewcontroller.m in Sources */,
 				18F3DE161C61F075007916E4 /* UIImage+Tool.m in Sources */,
