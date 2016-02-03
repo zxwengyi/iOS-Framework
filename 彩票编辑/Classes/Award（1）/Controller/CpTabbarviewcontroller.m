@@ -38,6 +38,7 @@
         imageName =[NSString stringWithFormat:@"TabBar%d",i+1];
         selimageName =[NSString stringWithFormat:@"TabBar%dSel",i+1];
         [tabBar addTabBarButtonWithName:imageName selName:selimageName];
+        
     }
 }
 //实现代理方法

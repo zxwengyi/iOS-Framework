@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		18AFBEAB1C6190B5006CA53B /* CpHallViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18AFBEAA1C6190B5006CA53B /* CpHallViewController.m */; };
 		18AFBEAE1C619B60006CA53B /* CpNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18AFBEAD1C619B60006CA53B /* CpNavigationController.m */; };
+		18AFBEB11C61BADF006CA53B /* CpTitleButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 18AFBEB01C61BADF006CA53B /* CpTitleButton.m */; };
 		18D93B301C5FB5EE00467FD1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D93B2F1C5FB5EE00467FD1 /* main.m */; };
 		18D93B331C5FB5EE00467FD1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D93B321C5FB5EE00467FD1 /* AppDelegate.m */; };
 		18D93B361C5FB5EE00467FD1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D93B351C5FB5EE00467FD1 /* ViewController.m */; };
@@ -24,6 +25,8 @@
 		18AFBEAA1C6190B5006CA53B /* CpHallViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CpHallViewController.m; sourceTree = "<group>"; };
 		18AFBEAC1C619B60006CA53B /* CpNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CpNavigationController.h; sourceTree = "<group>"; };
 		18AFBEAD1C619B60006CA53B /* CpNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CpNavigationController.m; sourceTree = "<group>"; };
+		18AFBEAF1C61BADF006CA53B /* CpTitleButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CpTitleButton.h; sourceTree = "<group>"; };
+		18AFBEB01C61BADF006CA53B /* CpTitleButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CpTitleButton.m; sourceTree = "<group>"; };
 		18D93B2B1C5FB5EE00467FD1 /* 彩票编辑.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "彩票编辑.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		18D93B2F1C5FB5EE00467FD1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		18D93B311C5FB5EE00467FD1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -233,6 +236,8 @@
 		18D93B551C5FC10900467FD1 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				18AFBEAF1C61BADF006CA53B /* CpTitleButton.h */,
+				18AFBEB01C61BADF006CA53B /* CpTitleButton.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -342,6 +347,7 @@
 				18AFBEAB1C6190B5006CA53B /* CpHallViewController.m in Sources */,
 				18D9917C1C60B86F00CA5EDC /* CpTabBarButton.m in Sources */,
 				18AFBEAE1C619B60006CA53B /* CpNavigationController.m in Sources */,
+				18AFBEB11C61BADF006CA53B /* CpTitleButton.m in Sources */,
 				18D93B5C1C5FC28C00467FD1 /* CpTabbar.m in Sources */,
 				18D93B361C5FB5EE00467FD1 /* ViewController.m in Sources */,
 				18D93B331C5FB5EE00467FD1 /* AppDelegate.m in Sources */,

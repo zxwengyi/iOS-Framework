@@ -7,12 +7,32 @@
 //
 
 #import "CpNavigationController.h"
+#define ios7 [[UIDevice currentDevice].systemVersion floatValue]>7.0
 
 @interface CpNavigationController ()
 
 @end
 
 @implementation CpNavigationController
+//第一次调用这个类或者之类时调用，并且只调用一次
++(void)initialize{
+    UINavigationBar *bar = [UINavigationBar appearance];
+    UIImage * navImage= nil;
+    //        配置导航条上的图片
+    if (ios7) {
+        navImage =[UIImage imageNamed:@"NavBar64"];
+    }else
+        navImage =[UIImage imageNamed:@"NavBar"];
+    [bar setBackgroundImage:navImage forBarMetrics:UIBarMetricsDefault];
+//    设置导航栏上的文字颜色为白色
+    NSDictionary *dict = @{
+                           NSForegroundColorAttributeName :[UIColor whiteColor]
+                           
+                           
+                           };
+    [bar setTitleTextAttributes:dict];
+
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
