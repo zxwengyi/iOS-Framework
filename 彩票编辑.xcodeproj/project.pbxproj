@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		18AFBEAB1C6190B5006CA53B /* CpHallViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18AFBEAA1C6190B5006CA53B /* CpHallViewController.m */; };
+		18AFBEAE1C619B60006CA53B /* CpNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18AFBEAD1C619B60006CA53B /* CpNavigationController.m */; };
 		18D93B301C5FB5EE00467FD1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D93B2F1C5FB5EE00467FD1 /* main.m */; };
 		18D93B331C5FB5EE00467FD1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D93B321C5FB5EE00467FD1 /* AppDelegate.m */; };
 		18D93B361C5FB5EE00467FD1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D93B351C5FB5EE00467FD1 /* ViewController.m */; };
@@ -18,6 +20,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		18AFBEA91C6190B5006CA53B /* CpHallViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CpHallViewController.h; sourceTree = "<group>"; };
+		18AFBEAA1C6190B5006CA53B /* CpHallViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CpHallViewController.m; sourceTree = "<group>"; };
+		18AFBEAC1C619B60006CA53B /* CpNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CpNavigationController.h; sourceTree = "<group>"; };
+		18AFBEAD1C619B60006CA53B /* CpNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CpNavigationController.m; sourceTree = "<group>"; };
 		18D93B2B1C5FB5EE00467FD1 /* 彩票编辑.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "彩票编辑.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		18D93B2F1C5FB5EE00467FD1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		18D93B311C5FB5EE00467FD1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -114,6 +120,8 @@
 			children = (
 				18D93B5D1C5FC38D00467FD1 /* CpTabbarviewcontroller.h */,
 				18D93B5E1C5FC38D00467FD1 /* CpTabbarviewcontroller.m */,
+				18AFBEAC1C619B60006CA53B /* CpNavigationController.h */,
+				18AFBEAD1C619B60006CA53B /* CpNavigationController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -242,6 +250,8 @@
 		18D93B571C5FC10900467FD1 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				18AFBEA91C6190B5006CA53B /* CpHallViewController.h */,
+				18AFBEAA1C6190B5006CA53B /* CpHallViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -329,7 +339,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18AFBEAB1C6190B5006CA53B /* CpHallViewController.m in Sources */,
 				18D9917C1C60B86F00CA5EDC /* CpTabBarButton.m in Sources */,
+				18AFBEAE1C619B60006CA53B /* CpNavigationController.m in Sources */,
 				18D93B5C1C5FC28C00467FD1 /* CpTabbar.m in Sources */,
 				18D93B361C5FB5EE00467FD1 /* ViewController.m in Sources */,
 				18D93B331C5FB5EE00467FD1 /* AppDelegate.m in Sources */,

@@ -20,12 +20,13 @@
 //    创建tabar
     
     // Do any additional setup after loading the view.
-//    移除原来的按钮
-    [self.tabBar removeFromSuperview];
+////    移除原来的按钮
+//    [self.tabBar removeFromSuperview];
 //    创建button
     CpTabbar* tabBar = [[CpTabbar alloc] init];
-    tabBar.frame =self.tabBar.frame;
-    [self.view addSubview:tabBar];
+//    应为点击系统自动隐藏时只能隐藏系统自带的tabbar，所以必须添加大系统的tabbar上
+    tabBar.frame =self.tabBar.bounds;
+    [self.tabBar addSubview:tabBar];
 //    tabBar.block = ^(int selectedIndex){
 //        self.selectedIndex = selectedIndex;
 //    };
