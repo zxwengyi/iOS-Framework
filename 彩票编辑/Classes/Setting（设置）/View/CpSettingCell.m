@@ -43,8 +43,10 @@
 //设置数据
 -(void)setUpDate{
 
-   
-    self.imageView.image = [UIImage imageNamed:_item.icon];
+    if (_item.icon.length) {
+        
+        self.imageView.image = [UIImage imageNamed:_item.icon];
+    }
     self.textLabel.text = _item.title;
 }
 //设置跳转类型

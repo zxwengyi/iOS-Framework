@@ -21,6 +21,8 @@
 		18C5DDC51C636399002FBFBC /* CpProduct.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C5DDC41C636399002FBFBC /* CpProduct.m */; };
 		18C5DDC81C63688B002FBFBC /* CpProductCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C5DDC71C63688B002FBFBC /* CpProductCell.m */; };
 		18C5DDCA1C636914002FBFBC /* CpProductCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18C5DDC91C636914002FBFBC /* CpProductCell.xib */; };
+		18C5DDCE1C63990B002FBFBC /* CpPushNoticeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C5DDCD1C63990B002FBFBC /* CpPushNoticeController.m */; };
+		18C5DDD11C63A0C0002FBFBC /* CpBaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C5DDD01C63A0C0002FBFBC /* CpBaseTableViewController.m */; };
 		18D93B301C5FB5EE00467FD1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D93B2F1C5FB5EE00467FD1 /* main.m */; };
 		18D93B331C5FB5EE00467FD1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D93B321C5FB5EE00467FD1 /* AppDelegate.m */; };
 		18D93B361C5FB5EE00467FD1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D93B351C5FB5EE00467FD1 /* ViewController.m */; };
@@ -62,6 +64,10 @@
 		18C5DDC61C63688B002FBFBC /* CpProductCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CpProductCell.h; sourceTree = "<group>"; };
 		18C5DDC71C63688B002FBFBC /* CpProductCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CpProductCell.m; sourceTree = "<group>"; };
 		18C5DDC91C636914002FBFBC /* CpProductCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CpProductCell.xib; sourceTree = "<group>"; };
+		18C5DDCC1C63990B002FBFBC /* CpPushNoticeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CpPushNoticeController.h; sourceTree = "<group>"; };
+		18C5DDCD1C63990B002FBFBC /* CpPushNoticeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CpPushNoticeController.m; sourceTree = "<group>"; };
+		18C5DDCF1C63A0C0002FBFBC /* CpBaseTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CpBaseTableViewController.h; sourceTree = "<group>"; };
+		18C5DDD01C63A0C0002FBFBC /* CpBaseTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CpBaseTableViewController.m; sourceTree = "<group>"; };
 		18D93B2B1C5FB5EE00467FD1 /* 彩票编辑.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "彩票编辑.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		18D93B2F1C5FB5EE00467FD1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		18D93B311C5FB5EE00467FD1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -118,6 +124,15 @@
 				18C5DDC01C635FD5002FBFBC /* products.json */,
 			);
 			path = Data;
+			sourceTree = "<group>";
+		};
+		18C5DDCB1C6398AE002FBFBC /* Push */ = {
+			isa = PBXGroup;
+			children = (
+				18C5DDCC1C63990B002FBFBC /* CpPushNoticeController.h */,
+				18C5DDCD1C63990B002FBFBC /* CpPushNoticeController.m */,
+			);
+			name = Push;
 			sourceTree = "<group>";
 		};
 		18D93B221C5FB5EE00467FD1 = {
@@ -404,12 +419,15 @@
 		18F3DE181C620C10007916E4 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				18C5DDCB1C6398AE002FBFBC /* Push */,
 				18C5DDBA1C63533B002FBFBC /* Product */,
 				18F3DE1B1C620CB4007916E4 /* CpSettingTableViewController.h */,
 				18F3DE1C1C620CB4007916E4 /* CpSettingTableViewController.m */,
 				18C5DD5C1C62F5A8002FBFBC /* testViewController.h */,
 				18C5DD5D1C62F5A8002FBFBC /* testViewController.m */,
 				18C5DD5E1C62F5A8002FBFBC /* testViewController.xib */,
+				18C5DDCF1C63A0C0002FBFBC /* CpBaseTableViewController.h */,
+				18C5DDD01C63A0C0002FBFBC /* CpBaseTableViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -527,6 +545,7 @@
 				18C5DDB91C6312C7002FBFBC /* MBProgressHUD.m in Sources */,
 				18D93B5C1C5FC28C00467FD1 /* CpTabbar.m in Sources */,
 				18F3DE1D1C620CB4007916E4 /* CpSettingTableViewController.m in Sources */,
+				18C5DDD11C63A0C0002FBFBC /* CpBaseTableViewController.m in Sources */,
 				18D93B361C5FB5EE00467FD1 /* ViewController.m in Sources */,
 				18D93B331C5FB5EE00467FD1 /* AppDelegate.m in Sources */,
 				18D95EF01C625D5C006D008D /* CpSettingSwicthItem.m in Sources */,
@@ -534,6 +553,7 @@
 				183C6F211C62368600FD2E1F /* CpSettingGroup.m in Sources */,
 				18C5DDC81C63688B002FBFBC /* CpProductCell.m in Sources */,
 				18C5DDBD1C635399002FBFBC /* CpProductViewController.m in Sources */,
+				18C5DDCE1C63990B002FBFBC /* CpPushNoticeController.m in Sources */,
 				18D93B301C5FB5EE00467FD1 /* main.m in Sources */,
 				18D93B5F1C5FC38D00467FD1 /* CpTabbarviewcontroller.m in Sources */,
 				18F3DE161C61F075007916E4 /* UIImage+Tool.m in Sources */,
