@@ -12,6 +12,15 @@
 		18AFBEAB1C6190B5006CA53B /* CpHallViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18AFBEAA1C6190B5006CA53B /* CpHallViewController.m */; };
 		18AFBEAE1C619B60006CA53B /* CpNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18AFBEAD1C619B60006CA53B /* CpNavigationController.m */; };
 		18AFBEB11C61BADF006CA53B /* CpTitleButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 18AFBEB01C61BADF006CA53B /* CpTitleButton.m */; };
+		18C5DD5F1C62F5A8002FBFBC /* testViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C5DD5D1C62F5A8002FBFBC /* testViewController.m */; };
+		18C5DD601C62F5A8002FBFBC /* testViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18C5DD5E1C62F5A8002FBFBC /* testViewController.xib */; };
+		18C5DDB91C6312C7002FBFBC /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C5DDB81C6312C7002FBFBC /* MBProgressHUD.m */; };
+		18C5DDBD1C635399002FBFBC /* CpProductViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C5DDBC1C635399002FBFBC /* CpProductViewController.m */; };
+		18C5DDC11C635FD5002FBFBC /* cywt.json in Resources */ = {isa = PBXBuildFile; fileRef = 18C5DDBF1C635FD5002FBFBC /* cywt.json */; };
+		18C5DDC21C635FD5002FBFBC /* products.json in Resources */ = {isa = PBXBuildFile; fileRef = 18C5DDC01C635FD5002FBFBC /* products.json */; };
+		18C5DDC51C636399002FBFBC /* CpProduct.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C5DDC41C636399002FBFBC /* CpProduct.m */; };
+		18C5DDC81C63688B002FBFBC /* CpProductCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C5DDC71C63688B002FBFBC /* CpProductCell.m */; };
+		18C5DDCA1C636914002FBFBC /* CpProductCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18C5DDC91C636914002FBFBC /* CpProductCell.xib */; };
 		18D93B301C5FB5EE00467FD1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D93B2F1C5FB5EE00467FD1 /* main.m */; };
 		18D93B331C5FB5EE00467FD1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D93B321C5FB5EE00467FD1 /* AppDelegate.m */; };
 		18D93B361C5FB5EE00467FD1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D93B351C5FB5EE00467FD1 /* ViewController.m */; };
@@ -39,6 +48,20 @@
 		18AFBEAD1C619B60006CA53B /* CpNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CpNavigationController.m; sourceTree = "<group>"; };
 		18AFBEAF1C61BADF006CA53B /* CpTitleButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CpTitleButton.h; sourceTree = "<group>"; };
 		18AFBEB01C61BADF006CA53B /* CpTitleButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CpTitleButton.m; sourceTree = "<group>"; };
+		18C5DD5C1C62F5A8002FBFBC /* testViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = testViewController.h; sourceTree = "<group>"; };
+		18C5DD5D1C62F5A8002FBFBC /* testViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = testViewController.m; sourceTree = "<group>"; };
+		18C5DD5E1C62F5A8002FBFBC /* testViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = testViewController.xib; sourceTree = "<group>"; };
+		18C5DDB71C6312C7002FBFBC /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		18C5DDB81C6312C7002FBFBC /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		18C5DDBB1C635399002FBFBC /* CpProductViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CpProductViewController.h; sourceTree = "<group>"; };
+		18C5DDBC1C635399002FBFBC /* CpProductViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CpProductViewController.m; sourceTree = "<group>"; };
+		18C5DDBF1C635FD5002FBFBC /* cywt.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = cywt.json; sourceTree = "<group>"; };
+		18C5DDC01C635FD5002FBFBC /* products.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = products.json; sourceTree = "<group>"; };
+		18C5DDC31C636399002FBFBC /* CpProduct.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CpProduct.h; sourceTree = "<group>"; };
+		18C5DDC41C636399002FBFBC /* CpProduct.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CpProduct.m; sourceTree = "<group>"; };
+		18C5DDC61C63688B002FBFBC /* CpProductCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CpProductCell.h; sourceTree = "<group>"; };
+		18C5DDC71C63688B002FBFBC /* CpProductCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CpProductCell.m; sourceTree = "<group>"; };
+		18C5DDC91C636914002FBFBC /* CpProductCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CpProductCell.xib; sourceTree = "<group>"; };
 		18D93B2B1C5FB5EE00467FD1 /* 彩票编辑.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "彩票编辑.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		18D93B2F1C5FB5EE00467FD1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		18D93B311C5FB5EE00467FD1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -79,6 +102,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		18C5DDBA1C63533B002FBFBC /* Product */ = {
+			isa = PBXGroup;
+			children = (
+				18C5DDBB1C635399002FBFBC /* CpProductViewController.h */,
+				18C5DDBC1C635399002FBFBC /* CpProductViewController.m */,
+			);
+			name = Product;
+			sourceTree = "<group>";
+		};
+		18C5DDBE1C635FD5002FBFBC /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				18C5DDBF1C635FD5002FBFBC /* cywt.json */,
+				18C5DDC01C635FD5002FBFBC /* products.json */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
 		18D93B221C5FB5EE00467FD1 = {
 			isa = PBXGroup;
 			children = (
@@ -114,6 +155,7 @@
 		18D93B2E1C5FB5EE00467FD1 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				18C5DDBE1C635FD5002FBFBC /* Data */,
 				18D93B2F1C5FB5EE00467FD1 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -308,17 +350,20 @@
 			isa = PBXGroup;
 			children = (
 				18F3DE101C61EF52007916E4 /* Catgroy */,
-				18F3DE0D1C61EF29007916E4 /* Controller */,
+				18F3DE0D1C61EF29007916E4 /* Lib */,
 				18F3DE0E1C61EF29007916E4 /* Modle */,
 				18F3DE0F1C61EF29007916E4 /* View */,
 			);
 			path = Other;
 			sourceTree = "<group>";
 		};
-		18F3DE0D1C61EF29007916E4 /* Controller */ = {
+		18F3DE0D1C61EF29007916E4 /* Lib */ = {
 			isa = PBXGroup;
 			children = (
+				18C5DDB71C6312C7002FBFBC /* MBProgressHUD.h */,
+				18C5DDB81C6312C7002FBFBC /* MBProgressHUD.m */,
 			);
+			name = Lib;
 			path = Controller;
 			sourceTree = "<group>";
 		};
@@ -359,8 +404,12 @@
 		18F3DE181C620C10007916E4 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				18C5DDBA1C63533B002FBFBC /* Product */,
 				18F3DE1B1C620CB4007916E4 /* CpSettingTableViewController.h */,
 				18F3DE1C1C620CB4007916E4 /* CpSettingTableViewController.m */,
+				18C5DD5C1C62F5A8002FBFBC /* testViewController.h */,
+				18C5DD5D1C62F5A8002FBFBC /* testViewController.m */,
+				18C5DD5E1C62F5A8002FBFBC /* testViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -376,6 +425,8 @@
 				18D95EEC1C625D3A006D008D /* CpSettingArrowItem.m */,
 				18D95EEE1C625D5C006D008D /* CpSettingSwicthItem.h */,
 				18D95EEF1C625D5C006D008D /* CpSettingSwicthItem.m */,
+				18C5DDC31C636399002FBFBC /* CpProduct.h */,
+				18C5DDC41C636399002FBFBC /* CpProduct.m */,
 			);
 			path = Modle;
 			sourceTree = "<group>";
@@ -385,6 +436,9 @@
 			children = (
 				18D95EE81C62583A006D008D /* CpSettingCell.h */,
 				18D95EE91C62583A006D008D /* CpSettingCell.m */,
+				18C5DDC91C636914002FBFBC /* CpProductCell.xib */,
+				18C5DDC61C63688B002FBFBC /* CpProductCell.h */,
+				18C5DDC71C63688B002FBFBC /* CpProductCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -446,7 +500,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18C5DDC21C635FD5002FBFBC /* products.json in Resources */,
+				18C5DDC11C635FD5002FBFBC /* cywt.json in Resources */,
 				18D93B3B1C5FB5EE00467FD1 /* Assets.xcassets in Resources */,
+				18C5DD601C62F5A8002FBFBC /* testViewController.xib in Resources */,
+				18C5DDCA1C636914002FBFBC /* CpProductCell.xib in Resources */,
 				18D93B391C5FB5EE00467FD1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -461,9 +519,12 @@
 				183C6F1E1C622ACB00FD2E1F /* CpSettingItem.m in Sources */,
 				18AFBEAB1C6190B5006CA53B /* CpHallViewController.m in Sources */,
 				18D9917C1C60B86F00CA5EDC /* CpTabBarButton.m in Sources */,
+				18C5DDC51C636399002FBFBC /* CpProduct.m in Sources */,
 				18D95EEA1C62583A006D008D /* CpSettingCell.m in Sources */,
 				18AFBEAE1C619B60006CA53B /* CpNavigationController.m in Sources */,
 				18AFBEB11C61BADF006CA53B /* CpTitleButton.m in Sources */,
+				18C5DD5F1C62F5A8002FBFBC /* testViewController.m in Sources */,
+				18C5DDB91C6312C7002FBFBC /* MBProgressHUD.m in Sources */,
 				18D93B5C1C5FC28C00467FD1 /* CpTabbar.m in Sources */,
 				18F3DE1D1C620CB4007916E4 /* CpSettingTableViewController.m in Sources */,
 				18D93B361C5FB5EE00467FD1 /* ViewController.m in Sources */,
@@ -471,6 +532,8 @@
 				18D95EF01C625D5C006D008D /* CpSettingSwicthItem.m in Sources */,
 				18D95EED1C625D3A006D008D /* CpSettingArrowItem.m in Sources */,
 				183C6F211C62368600FD2E1F /* CpSettingGroup.m in Sources */,
+				18C5DDC81C63688B002FBFBC /* CpProductCell.m in Sources */,
+				18C5DDBD1C635399002FBFBC /* CpProductViewController.m in Sources */,
 				18D93B301C5FB5EE00467FD1 /* main.m in Sources */,
 				18D93B5F1C5FC38D00467FD1 /* CpTabbarviewcontroller.m in Sources */,
 				18F3DE161C61F075007916E4 /* UIImage+Tool.m in Sources */,

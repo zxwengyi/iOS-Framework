@@ -7,11 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
-
+typedef void (^CpSettingItemOpion)();
 @interface CpSettingItem : NSObject
 
 @property(nonatomic,copy) NSString *title;
-
+@property(nonatomic ,copy) CpSettingItemOpion option;
 @property(nonatomic,copy) NSString *icon;
 //创建一个工厂方法
 +(instancetype)itemWithIcon:(NSString *)icon title:(NSString *)title;

@@ -11,4 +11,5 @@
 @interface CpSettingArrowItem : CpSettingItem
 //跳转控制器的类名
 @property(nonatomic ,assign)Class destVcClass;
++(instancetype)itemWithIcon:(NSString *)icon title:(NSString *)title destVcClass:(Class) destVcClass;
 @end

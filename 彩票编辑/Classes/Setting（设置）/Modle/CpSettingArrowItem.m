@@ -9,5 +9,12 @@
 #import "CpSettingArrowItem.h"
 
 @implementation CpSettingArrowItem
-
++(instancetype)itemWithIcon:(NSString *)icon title:(NSString *)title destVcClass:(Class)destVcClass{
+//调用父类的方法赋值父类已经拥有的两个参数
+    CpSettingArrowItem *item = [super itemWithIcon:icon title:title];
+//    赋值自身带有的参数
+     item.destVcClass =destVcClass;
+    
+    return item;
+}
 @end
