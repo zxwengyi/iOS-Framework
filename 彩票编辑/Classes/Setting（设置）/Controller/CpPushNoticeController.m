@@ -13,7 +13,7 @@
 #import "CpSettingCell.h"
 #import "CpSettingSwicthItem.h"
 #import "CpSettingArrowItem.h"
-
+#import "CpScoreNoticeViewController.h"
 
 @interface CpPushNoticeController ()
 
@@ -35,7 +35,7 @@
     
     CpSettingItem *anim = [CpSettingArrowItem itemWithIcon:nil title:@"中奖动画"];
     
-    CpSettingItem *score = [CpSettingArrowItem itemWithIcon:nil title:@"比分直播提醒"];
+    CpSettingItem *score = [CpSettingArrowItem itemWithIcon:nil title:@"比分直播提醒"destVcClass: [CpScoreNoticeViewController class]];
     
     CpSettingItem *timer = [CpSettingArrowItem itemWithIcon:nil title:@"购彩定时提醒"];
     

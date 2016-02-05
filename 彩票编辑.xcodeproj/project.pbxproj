@@ -23,6 +23,9 @@
 		18C5DDCA1C636914002FBFBC /* CpProductCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18C5DDC91C636914002FBFBC /* CpProductCell.xib */; };
 		18C5DDCE1C63990B002FBFBC /* CpPushNoticeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C5DDCD1C63990B002FBFBC /* CpPushNoticeController.m */; };
 		18C5DDD11C63A0C0002FBFBC /* CpBaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C5DDD01C63A0C0002FBFBC /* CpBaseTableViewController.m */; };
+		18C5DDD41C64426F002FBFBC /* CpScoreNoticeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C5DDD31C64426F002FBFBC /* CpScoreNoticeViewController.m */; };
+		18C5DDD71C644E14002FBFBC /* CpSettingLabelItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C5DDD61C644E14002FBFBC /* CpSettingLabelItem.m */; };
+		18C5DDDB1C646D19002FBFBC /* CpSaveTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C5DDDA1C646D19002FBFBC /* CpSaveTool.m */; };
 		18D93B301C5FB5EE00467FD1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D93B2F1C5FB5EE00467FD1 /* main.m */; };
 		18D93B331C5FB5EE00467FD1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D93B321C5FB5EE00467FD1 /* AppDelegate.m */; };
 		18D93B361C5FB5EE00467FD1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D93B351C5FB5EE00467FD1 /* ViewController.m */; };
@@ -68,6 +71,12 @@
 		18C5DDCD1C63990B002FBFBC /* CpPushNoticeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CpPushNoticeController.m; sourceTree = "<group>"; };
 		18C5DDCF1C63A0C0002FBFBC /* CpBaseTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CpBaseTableViewController.h; sourceTree = "<group>"; };
 		18C5DDD01C63A0C0002FBFBC /* CpBaseTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CpBaseTableViewController.m; sourceTree = "<group>"; };
+		18C5DDD21C64426F002FBFBC /* CpScoreNoticeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CpScoreNoticeViewController.h; sourceTree = "<group>"; };
+		18C5DDD31C64426F002FBFBC /* CpScoreNoticeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CpScoreNoticeViewController.m; sourceTree = "<group>"; };
+		18C5DDD51C644E14002FBFBC /* CpSettingLabelItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CpSettingLabelItem.h; sourceTree = "<group>"; };
+		18C5DDD61C644E14002FBFBC /* CpSettingLabelItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CpSettingLabelItem.m; sourceTree = "<group>"; };
+		18C5DDD91C646D19002FBFBC /* CpSaveTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CpSaveTool.h; sourceTree = "<group>"; };
+		18C5DDDA1C646D19002FBFBC /* CpSaveTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CpSaveTool.m; sourceTree = "<group>"; };
 		18D93B2B1C5FB5EE00467FD1 /* 彩票编辑.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "彩票编辑.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		18D93B2F1C5FB5EE00467FD1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		18D93B311C5FB5EE00467FD1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -131,8 +140,19 @@
 			children = (
 				18C5DDCC1C63990B002FBFBC /* CpPushNoticeController.h */,
 				18C5DDCD1C63990B002FBFBC /* CpPushNoticeController.m */,
+				18C5DDD21C64426F002FBFBC /* CpScoreNoticeViewController.h */,
+				18C5DDD31C64426F002FBFBC /* CpScoreNoticeViewController.m */,
 			);
 			name = Push;
+			sourceTree = "<group>";
+		};
+		18C5DDD81C646CE5002FBFBC /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				18C5DDD91C646D19002FBFBC /* CpSaveTool.h */,
+				18C5DDDA1C646D19002FBFBC /* CpSaveTool.m */,
+			);
+			name = Tool;
 			sourceTree = "<group>";
 		};
 		18D93B221C5FB5EE00467FD1 = {
@@ -409,6 +429,7 @@
 		18F3DE171C620C10007916E4 /* Setting（设置） */ = {
 			isa = PBXGroup;
 			children = (
+				18C5DDD81C646CE5002FBFBC /* Tool */,
 				18F3DE181C620C10007916E4 /* Controller */,
 				18F3DE191C620C10007916E4 /* Modle */,
 				18F3DE1A1C620C10007916E4 /* View */,
@@ -445,6 +466,8 @@
 				18D95EEF1C625D5C006D008D /* CpSettingSwicthItem.m */,
 				18C5DDC31C636399002FBFBC /* CpProduct.h */,
 				18C5DDC41C636399002FBFBC /* CpProduct.m */,
+				18C5DDD51C644E14002FBFBC /* CpSettingLabelItem.h */,
+				18C5DDD61C644E14002FBFBC /* CpSettingLabelItem.m */,
 			);
 			path = Modle;
 			sourceTree = "<group>";
@@ -536,6 +559,7 @@
 			files = (
 				183C6F1E1C622ACB00FD2E1F /* CpSettingItem.m in Sources */,
 				18AFBEAB1C6190B5006CA53B /* CpHallViewController.m in Sources */,
+				18C5DDDB1C646D19002FBFBC /* CpSaveTool.m in Sources */,
 				18D9917C1C60B86F00CA5EDC /* CpTabBarButton.m in Sources */,
 				18C5DDC51C636399002FBFBC /* CpProduct.m in Sources */,
 				18D95EEA1C62583A006D008D /* CpSettingCell.m in Sources */,
@@ -545,8 +569,10 @@
 				18C5DDB91C6312C7002FBFBC /* MBProgressHUD.m in Sources */,
 				18D93B5C1C5FC28C00467FD1 /* CpTabbar.m in Sources */,
 				18F3DE1D1C620CB4007916E4 /* CpSettingTableViewController.m in Sources */,
+				18C5DDD71C644E14002FBFBC /* CpSettingLabelItem.m in Sources */,
 				18C5DDD11C63A0C0002FBFBC /* CpBaseTableViewController.m in Sources */,
 				18D93B361C5FB5EE00467FD1 /* ViewController.m in Sources */,
+				18C5DDD41C64426F002FBFBC /* CpScoreNoticeViewController.m in Sources */,
 				18D93B331C5FB5EE00467FD1 /* AppDelegate.m in Sources */,
 				18D95EF01C625D5C006D008D /* CpSettingSwicthItem.m in Sources */,
 				18D95EED1C625D3A006D008D /* CpSettingArrowItem.m in Sources */,
