@@ -64,6 +64,7 @@
         self.imageView.image = [UIImage imageNamed:_item.icon];
     }
     self.textLabel.text = _item.title;
+    self.detailTextLabel.text = _item.subTitle;
 }
 //设置跳转类型
 -(void)setUpAccessoryView{
@@ -95,7 +96,7 @@
     static NSString *ID = @"cell";
    CpSettingCell *cell = [tableView dequeueReusableCellWithIdentifier:ID];
     if (cell == nil) {
-        cell = [[CpSettingCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:ID];
+        cell = [[CpSettingCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:ID];
     }
     return cell;
 

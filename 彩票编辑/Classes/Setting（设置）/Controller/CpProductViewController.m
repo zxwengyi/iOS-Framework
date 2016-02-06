@@ -23,6 +23,7 @@
         NSData *date = [NSData dataWithContentsOfFile:fileName];
         NSMutableArray *jsonsArr = [NSJSONSerialization JSONObjectWithData:date options:NSJSONReadingMutableContainers error:nil];
         for (NSDictionary *dict in jsonsArr) {
+            
             CpProduct *product = [CpProduct productWithDict:dict];
             [_products addObject:product];
         }

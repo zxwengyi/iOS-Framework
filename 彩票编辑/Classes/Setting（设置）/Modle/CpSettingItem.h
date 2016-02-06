@@ -13,6 +13,8 @@ typedef void (^CpSettingItemOpion)();
 @property(nonatomic,copy) NSString *title;
 @property(nonatomic ,copy) CpSettingItemOpion option;
 @property(nonatomic,copy) NSString *icon;
+
+@property(nonatomic , copy)NSString *subTitle;
 //创建一个工厂方法
 +(instancetype)itemWithIcon:(NSString *)icon title:(NSString *)title;
 
