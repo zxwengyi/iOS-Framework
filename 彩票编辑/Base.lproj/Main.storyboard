@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="hox-Bz-L2M">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="hox-Bz-L2M">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -207,13 +207,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="LoginScreen" translatesAutoresizingMaskIntoConstraints="NO" id="R8L-AZ-UfD">
-                                <rect key="frame" x="10" y="72" width="300" height="140"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="300" id="Nat-My-r5i"/>
-                                    <constraint firstAttribute="height" constant="140" id="wL4-Sh-3Aj"/>
-                                </constraints>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wV8-2S-EZ3">
                                 <rect key="frame" x="10" y="230" width="300" height="40"/>
                                 <state key="normal" title="登陆" backgroundImage="RedButton"/>
@@ -222,12 +215,24 @@
                                 <rect key="frame" x="10" y="284" width="300" height="40"/>
                                 <rect key="contentStretch" x="0.5" y="0.5" width="0.0" height="0.0"/>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="LoginScreen" translatesAutoresizingMaskIntoConstraints="NO" id="R8L-AZ-UfD">
+                                <rect key="frame" x="10" y="72" width="300" height="140"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="140" id="GRT-Z4-IT8"/>
+                                    <constraint firstAttribute="width" constant="300" id="Nat-My-r5i"/>
+                                    <constraint firstAttribute="height" constant="140" id="wL4-Sh-3Aj"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="wRs-68-V9P"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.4078674135" blue="0.18648632949999999" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="R8L-AZ-UfD" firstAttribute="leading" secondItem="DAb-iV-KUQ" secondAttribute="leadingMargin" constant="-10" id="2BX-R0-7gU"/>
                             <constraint firstAttribute="trailingMargin" secondItem="R8L-AZ-UfD" secondAttribute="trailing" constant="-10" id="FPd-nV-XRa"/>
                             <constraint firstItem="R8L-AZ-UfD" firstAttribute="top" secondItem="Mhc-Xi-l1k" secondAttribute="bottom" constant="8" id="M9X-MZ-nBQ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="R8L-AZ-UfD" secondAttribute="trailing" constant="-10" id="j30-Gi-axe"/>
+                            <constraint firstItem="R8L-AZ-UfD" firstAttribute="leading" secondItem="DAb-iV-KUQ" secondAttribute="leadingMargin" constant="-10" id="uD8-C6-pip"/>
+                            <constraint firstItem="R8L-AZ-UfD" firstAttribute="top" secondItem="Mhc-Xi-l1k" secondAttribute="bottom" constant="8" id="woN-Rf-BxC"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
@@ -249,7 +254,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7gN-rp-Z5m" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1267" y="167"/>
+            <point key="canvasLocation" x="-1238" y="85"/>
         </scene>
         <!--Item-->
         <scene sceneID="qUG-K1-Exc">
@@ -267,7 +272,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="m2m-3j-CtT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1453" y="125"/>
+            <point key="canvasLocation" x="-1630" y="77"/>
         </scene>
         <!--Item-->
         <scene sceneID="BqH-YY-SSh">

@@ -45,6 +45,7 @@
     //    创建cell
     CpSettingCell *cell = [CpSettingCell cellWithTableView:tableView];
     //    取出模型
+
     CpSettingGroup *group = self.dateList[indexPath.section];
     CpSettingItem *item = group.items[indexPath.row];
     //    传递模型
@@ -85,5 +86,12 @@
     }
     
 }
+-(void)viewDidLoad{
+    [super viewDidLoad];
+
+    self.tableView.contentInset=UIEdgeInsetsMake(-15, 0, 0, 0);
+
+}
+
 
 @end

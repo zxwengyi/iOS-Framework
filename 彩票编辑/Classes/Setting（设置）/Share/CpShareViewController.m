@@ -9,7 +9,7 @@
 #import "CpShareViewController.h"
 #import "CpSettingItem.h"
 #import "CpSettingGroup.h"
-
+#import "UMSocial.h"
 #import "CpSettingCell.h"
 #import "CpSettingSwicthItem.h"
 #import "CpSettingArrowItem.h"
@@ -35,7 +35,16 @@
     CpSettingArrowItem *mai = [CpSettingArrowItem itemWithIcon:@"MailShare" title:@"邮件分享"];
     
     CpSettingItem *sms = [CpSettingArrowItem itemWithIcon:@"SmsShare" title:@"短信分享"];
+    
     CpSettingItem *weibo = [CpSettingArrowItem itemWithIcon:@"WeiboSina" title:@"微博分享"];
+    weibo.option = ^{
+        [[UMSocialDataService defaultDataService]  postSNSWithTypes:@[UMShareToSina] content:@"分享内嵌文字" image:nil location:nil urlResource:nil presentedController:self completion:^(UMSocialResponseEntity *shareResponse){
+            if (shareResponse.responseCode == UMSResponseCodeSuccess) {
+                NSLog(@"分享成功！");
+            }
+        }];
+        
+    };
     
     CpSettingGroup *group0 = [[CpSettingGroup alloc] init];
     group0.items = @[mai,sms,weibo];

@@ -8,6 +8,7 @@
 
 #import "CpBaseTableViewController.h"
 
-@interface CpAboutViewController : CpBaseTableViewController
+
+@interface CpAboutViewController :CpBaseTableViewController
 
 @end

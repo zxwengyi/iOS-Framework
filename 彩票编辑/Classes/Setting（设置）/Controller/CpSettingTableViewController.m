@@ -57,7 +57,7 @@
     CpSettingArrowItem *Share = [CpSettingArrowItem itemWithIcon:@"MoreShare" title:@"分享"destVcClass:[CpShareViewController class] ];
     CpSettingArrowItem *Message = [CpSettingArrowItem itemWithIcon:@"MoreMessage" title:@"查看信息"destVcClass:[testViewController class] ];
     CpSettingArrowItem *Netease = [CpSettingArrowItem itemWithIcon:@"MoreNetease" title:@"产品推荐"destVcClass:[CpProductViewController class] ];
-    CpSettingArrowItem *About = [CpSettingArrowItem itemWithIcon:@"MoreAbout" title:@"关于"destVcClass:[CpAboutViewController class] ];
+    CpSettingArrowItem *About = [CpSettingArrowItem itemWithIcon:@"MoreAbout" title:@"关于"destVcClass:[CpProductViewController class] ];
     
     CpSettingGroup *group1 = [[CpSettingGroup alloc] init];
     group1.items = @[newVersion ,help,Share,Message,Netease,About];

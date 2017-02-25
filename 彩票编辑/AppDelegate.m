@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "UMSocial.h"
 
 @interface AppDelegate ()
 
@@ -17,10 +18,17 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    [UMSocialData setAppKey:@"56caf03867e58ebb7e001bc0"];
+    NSString *str = nil;
+    NSInteger strlength = [str length];
+      NSLog(@"%ld",(long)strlength);
     
 
 //设置状态栏上的时间显示为白色
     application.statusBarStyle = UIStatusBarStyleLightContent;
+    
+//    [UMSocialData setAppKey:@"56caf03867e58ebb7e001bc0"];
+
     
     return YES;
     
